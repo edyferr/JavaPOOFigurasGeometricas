@@ -31,6 +31,8 @@ public class POOFigurasGeometricas {
         System.out.println("| 3) Calcular el area y perimetro de un Rectangulo |");
         System.out.println("| 4) Calcular el area y perimetro de un Triangulo   |");
         System.out.println("| 5) Calcular el area y perimetro de un Poligono  |");
+        System.out.println("| 6) Calcular el area y perimetro de un Trapecio |");
+ 
        
         System.out.println("| *) Salir                                         |");
         System.out.println("+==================================================+");
@@ -123,6 +125,32 @@ public class POOFigurasGeometricas {
                 System.out.println("El Area del Pentagono es: " + poligono.getArea());
                 System.out.println("El Perimetro del Pentagono es: " + poligono.getPerimetro());
                 break;
+                
+                
+                
+           case 6:
+               
+                limpiarConsola();
+                System.out.println("+==================================================+");
+                System.out.println("| SubPrograma Trapecio                      |");
+                System.out.println("+==================================================+");
+                
+                System.out.println("Introducir la base mayor :");
+                 int  bmayor= entradaTeclado.nextInt();
+                System.out.println("Introducir la base menor :");
+                 int bmenor= entradaTeclado.nextInt();
+                System.out.println("Introducir los lados:");
+                 int lados= entradaTeclado.nextInt();
+                System.out.println("Introducir la altura:");
+                 int alturaT= entradaTeclado.nextInt();
+               
+                Trapecio trapecio = new Trapecio(bmayor,bmenor,lados,alturaT);
+                System.out.println("El Area del Trapecio es: " + trapecio.getArea());
+                System.out.println("El Perimetro del Trapecio es: " + trapecio.getPerimetro());
+                break;
+           
+               
+            
                 
         }
     }
