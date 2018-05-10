@@ -29,6 +29,7 @@ public class POOFigurasGeometricas {
         System.out.println("| 1) Calcular el area y perimetro de un Circulo    |");
         System.out.println("| 2) Calcular el area y perimetro de un Cuadrado   |");
         System.out.println("| 3) Calcular el area y perimetro de un Rectangulo |");
+       
         System.out.println("| *) Salir                                         |");
         System.out.println("+==================================================+");
         entradaTeclado = new Scanner(System.in);
@@ -78,6 +79,12 @@ public class POOFigurasGeometricas {
                 break;
             default:
                 System.out.println("Salio del programa");
+                
+                
+                
+                
+    
+                
         }
     }
     
