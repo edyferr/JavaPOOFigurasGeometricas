@@ -30,6 +30,7 @@ public class POOFigurasGeometricas {
         System.out.println("| 2) Calcular el area y perimetro de un Cuadrado   |");
         System.out.println("| 3) Calcular el area y perimetro de un Rectangulo |");
         System.out.println("| 4) Calcular el area y perimetro de un Triangulo   |");
+        System.out.println("| 5) Calcular el area y perimetro de un Poligono  |");
        
         System.out.println("| *) Salir                                         |");
         System.out.println("+==================================================+");
@@ -103,7 +104,25 @@ public class POOFigurasGeometricas {
                 break;
            
                 
-    
+           case 5:
+               
+                limpiarConsola();
+                System.out.println("+==================================================+");
+                System.out.println("| SubPrograma: Poligono                       |");
+                System.out.println("+==================================================+");
+                
+                System.out.println("Introducir Numeros de Lados del Poligono :");
+                 double  NoLados= entradaTeclado.nextDouble();
+                System.out.println("Introducir Valor de los Lados:");
+                 double  Lados= entradaTeclado.nextDouble();
+                System.out.println("Introducir Escribe valos del Apotema:");
+                 double Apotema= entradaTeclado.nextDouble();
+               
+               
+                Poligono poligono = new Poligono(NoLados,Lados,Apotema);
+                System.out.println("El Area del Pentagono es: " + poligono.getArea());
+                System.out.println("El Perimetro del Pentagono es: " + poligono.getPerimetro());
+                break;
                 
         }
     }
